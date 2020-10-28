@@ -1,0 +1,27 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/* 导航条样式 */
+nav {
+  position: relative;
+}
+nav span {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+}
+nav span a {
+  font-weight: bold;
+}
+.container {
+  height: 600px;
+  width: 100%;
+  margin-top: -20px;
+  background-image: url(../image/login.jpg);
+}
+.container .work {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}

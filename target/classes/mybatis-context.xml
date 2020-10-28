@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--其他数据在spring中设置-->
+    <typeAliases>
+        <!--
+            package:把包下面的所有类名作为别名
+            name：实体类的包名
+        -->
+        <package name="com.jinggege.domain"/>
+    </typeAliases>
+    <mappers>
+        <!--这里是设置将package指定的包中的Dao接口，实现它-->
+        <package name="com/jinggege/dao"/>
+    </mappers>
+</configuration>

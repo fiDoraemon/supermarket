@@ -1,0 +1,38 @@
+/* 导航条样式 */
+nav {
+  position: relative;
+}
+nav span {
+  position: absolute;
+  line-height: 50px;
+  right: 20px;
+  color: #9d9d9d;
+}
+nav span a {
+  color: #9d9d9d;
+  font-weight: bold;
+}
+nav span a:hover {
+  color: whitesmoke;
+}
+/* 第一个table样式 */
+.btn {
+  height: 34px;
+  border-left: none;
+}
+/* 第二个table样式 */
+.tb02 th {
+  font-size: 12px;
+  color: #c2bcbb;
+}
+.tb02 td:nth-child(2) {
+  color: #498fcc;
+}
+/* 返回 */
+.container {
+  position: relative;
+}
+.container span {
+  position: absolute;
+  right: 100px;
+}

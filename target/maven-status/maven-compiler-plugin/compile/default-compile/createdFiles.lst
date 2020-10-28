@@ -1,0 +1,12 @@
+com\jinggege\controller\SupplierController.class
+com\jinggege\dao\SupplierManage.class
+com\jinggege\service\SupplierService.class
+com\jinggege\controller\UserController.class
+com\jinggege\domain\Supplier.class
+com\jinggege\service\OrderService.class
+com\jinggege\service\Impl\LoginServiceImpl.class
+com\jinggege\dao\RegisterAndLogin.class
+com\jinggege\service\Impl\SupplierServiceImpl.class
+com\jinggege\domain\User.class
+com\jinggege\service\Impl\OrderServiceImpl.class
+com\jinggege\service\LoginService.class

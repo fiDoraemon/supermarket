@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/supplierInfo.css">
+  <link rel="stylesheet" href="../font/bootstrap.min.css">
+  <link rel="stylesheet" href="../font/css/all.min.css">
+  <script type="text/javascript">
+
+    function selectAllorNo(){
+      //获取所有复选框的对象集
+      var boxid=document.getElementById("selectAllOrNot");
+      if(boxid.checked==false){
+        selectAllOrNot(false);
+      }else{
+        selectAllOrNot(true);
+      }
+    }
+    //实现全选按钮 和 全不选按钮的操作
+    function selectAllOrNot(bool){
+      //获取name=love 的对象集  一个name可以对应多个元素  所有没有getElementByName()这个方法
+      var loves=document.getElementsByName("select");
+      //获取id=boxid 的对象集   一个id只能对应一个元素  所有没有getElementsById()这个方法
+      var boxid=document.getElementById("selectAllOrNot");
+      boxid.checked=bool;
+      for(var i=0;i<loves.length;i++){
+        loves[i].checked=bool;
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <!-- 导航条 -->
+<nav class="navbar navbar-inverse">
+  <div class="">
+    <h3 class="navbar-text">超市订单管理系统</h3>
+    <span><a href="#"><i class="fas fa-user"></i> 风流倜傥 </a>您好！</span>
+  </div>
+</nav>
+    <!-- 内容 -->
+    <div class="container">
+      <table class="table  tb02 ">
+        <tbody>
+          <tr class="success">
+            <td colspan="10">
+              <h4>用户具体信息</h4>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+          <tr class="active">
+            <td>
+              <input type="checkbox"  id="selectAllOrNot" onclick="selectAllorNo()">
+            </td>
+            <td>编号</td>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>名字</th>
+            <th>身份证号码</th>
+            <th>权限</th>
+
+          <%
+
+            %>
+          </tr>
+            <td>
+              <input type="checkbox" name="select">
+            </td>
+            <td>001</td>
+            <td>clj</td>
+            <td>1</td>
+            <td>傻狗</td>
+            <td>987654321</td>
+            <td>管理员</td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              <input type="checkbox" name="select">
+            </td>
+            <td>001</td>
+            <td>clj</td>
+            <td>1</td>
+            <td>傻狗</td>
+            <td>987654321</td>
+            <td>管理员</td>
+          </tr>
+       </tbody>
+      </table>
+      <button class="btn btn-active">确定修改</button>
+       <a href="./user.html" class="btn btn-default">返回上一页</a>
+    </div>
+</body>
+</html>

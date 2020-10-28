@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jinggege.dao.SupplierManage">
+    <select id="selectAll" resultType="com.jinggege.domain.Supplier">
+        select supplier,contacts,address,phone from supplierinfo
+    </select>
+    <insert id="insertSupplier">
+        insert into supplierinfo value(#{supplier},#{contacts},#{address},#{phone})
+    </insert>
+</mapper>
